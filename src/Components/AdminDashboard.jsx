@@ -26,7 +26,7 @@ const AdminDashboard = () => {
     <div>
       <h2>Admin Dashboard</h2>
       {templates.map((temp) => (
-        <div key={temp._id}>
+        <div className="card" key={temp._id}>
           <h3>{temp.title}</h3>
           <p>{temp.description}</p>
           <p>Status: {temp.status}</p>

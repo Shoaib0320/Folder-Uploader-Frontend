@@ -38,6 +38,7 @@ const UploadTemplate = () => {
       <input type="text" placeholder="Title" onChange={(e) => setTitle(e.target.value)} required />
       <input type="text" placeholder="Description" onChange={(e) => setDescription(e.target.value)} required />
       <input type="file" accept=".rar" onChange={(e) => setFile(e.target.files[0])} required />
+      {/* <input type="file" accept=".rar, .zip" onChange={(e) => setFile(e.target.files[0])} required /> */}
       <button type="submit">Upload</button>
     </form>
   );
